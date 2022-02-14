@@ -1,0 +1,13 @@
+.image {
+  position: relative;
+  width: 100%;
+  &.-full {
+    max-width: calc(100% - 8rem);
+    margin-left: 4rem;
+    padding: 0 6rem;
+    height: 40rem;
+  }
+  img {
+    object-fit: cover;
+  }
+}

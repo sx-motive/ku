@@ -1,0 +1,16 @@
+.section-head {
+  position: relative;
+  width: 100%;
+  margin-top: 8rem;
+  .section-head-title {
+    font-size: 5rem;
+    font-family: $default-ff;
+    font-weight: 400;
+    width: 100%;
+  }
+  .section-head-desc {
+    width: 100%;
+    margin-bottom: 5rem;
+    line-height: 1.6;
+  }
+}

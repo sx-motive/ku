@@ -1,0 +1,20 @@
+.hero {
+  position: relative;
+  width: 100%;
+  padding: 24rem 0 5rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: $default-ff;
+  font-size: 7rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+  font-family: $default-ff;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+}

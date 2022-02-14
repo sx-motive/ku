@@ -1,0 +1,19 @@
+// base
+@import "./components/locomotive.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "base.scss";
+
+// components
+@import "./components/cursor.scss";
+@import "./components/header.scss";
+@import "./components/menu.scss";
+@import "./components/footer.scss";
+@import "./components/image.scss";
+
+// sections
+@import "./components/hero.scss";
+@import "./components/head.scss";
+@import "./components/services.scss";
+@import "./components/portfolio.scss";
+@import "./components/about.scss";

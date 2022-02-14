@@ -1,0 +1,43 @@
+.portfolio {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16rem;
+}
+
+.portfolio-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 46%;
+}
+
+.portfolio-item-image {
+  position: relative;
+  width: 100%;
+  height: 26rem;
+  filter: grayscale(1);
+  img {
+    object-fit: cover;
+  }
+}
+
+.portfolio-item-title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.portfolio-item-title-title {
+  font-size: 1.6rem;
+}
+.portfolio-item-desc {
+  display: none;
+}

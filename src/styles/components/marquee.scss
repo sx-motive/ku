@@ -1,0 +1,14 @@
+.marquee-wrapper {
+  overflow: hidden;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: default;
+  user-select: none;
+}
+.marquee-text {
+  font-size: 10rem;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  text-transform: uppercase;
+}
