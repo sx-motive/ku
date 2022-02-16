@@ -2,6 +2,7 @@
 @import "./components/locomotive.scss";
 @import "variables.scss";
 @import "fonts.scss";
+@import "breakpoints.scss";
 @import "base.scss";
 
 // components
@@ -12,8 +13,13 @@
 @import "./components/image.scss";
 
 // sections
+@import "./components/marquee.scss";
 @import "./components/hero.scss";
 @import "./components/head.scss";
 @import "./components/services.scss";
 @import "./components/portfolio.scss";
 @import "./components/about.scss";
+@import "./components/contact.scss";
+
+// other
+@import "./components/other.scss";

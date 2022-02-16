@@ -34,6 +34,11 @@
     transition: all 0.2s cubic-bezier(0.28, 0.81, 0.43, 0.97);
     will-change: all;
     z-index: 2;
+    .menu-box-main {
+      position: relative;
+      text-align: center;
+      font-size: 4rem;
+    }
   }
   &.-open {
     z-index: 99;
@@ -60,6 +65,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @include media("<=phone") {
+    height: 5rem;
+    width: 4.5rem;
+  }
 }
 
 .burger {

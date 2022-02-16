@@ -28,10 +28,10 @@ export default function Marquee(props) {
       });
     }
     const marqueeWrapper = document.querySelector("#marquee-wrapper");
-    animateMarquee(marqueeWrapper, 20000);
+    animateMarquee(marqueeWrapper, 29000);
   });
   return (
-    <div className="marquee" data-scroll-section>
+    <div className="marquee">
       <div className="marquee-wrapper" id="marquee-wrapper">
         <div className="marquee-text">{props.text}</div>
       </div>

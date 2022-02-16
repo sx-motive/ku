@@ -9,7 +9,24 @@
 }
 
 html {
-  font-size: 16px;
+  @include media("<=phone") {
+    font-size: 16px;
+  }
+  @include media(">phone", "<=tablet") {
+    font-size: 16px;
+  }
+  @include media(">tablet", "<=laptop") {
+    font-size: 18px;
+  }
+  @include media(">laptop", "<=desktop") {
+    font-size: 22px;
+  }
+  @include media(">desktop", "<=quad") {
+    font-size: 28px;
+  }
+  @include media(">quad") {
+    font-size: 42px;
+  }
 }
 
 body {
@@ -57,15 +74,37 @@ p {
   position: relative;
   width: 100%;
   &.-full {
-    max-width: calc(100% - 20rem);
+    max-width: calc(100% - 16rem);
     margin: 0 auto;
+    @include media("<=tablet") {
+      max-width: calc(100% - 8rem);
+    }
+    @include media("<=phone") {
+      max-width: calc(100% - 3rem);
+    }
   }
   &.-right {
     max-width: calc(60% - 10rem);
     margin-left: calc(50% - 10rem);
+    @include media("<=tablet") {
+      max-width: calc(70% - 8rem);
+      margin-left: 4rem;
+    }
+    @include media("<=phone") {
+      max-width: calc(100% - 3rem);
+      margin-left: 1.5rem;
+    }
   }
   &.-left {
     max-width: calc(60% - 10rem);
-    margin-left: 10rem;
+    margin-left: 8rem;
+    @include media("<=tablet") {
+      max-width: calc(70% - 8rem);
+      margin-left: 4rem;
+    }
+    @include media("<=phone") {
+      max-width: calc(100% - 3rem);
+      margin-left: 1.5rem;
+    }
   }
 }

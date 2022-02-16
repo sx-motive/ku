@@ -4,6 +4,7 @@ import ImageBlock from "../components/sections/image";
 import Portfolio from "../components/sections/portfolio";
 import Head from "../components/sections/head";
 import Services from "../components/sections/services";
+import Contact from "../components/sections/contact";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         desc="Я специализируюсь на брендинге. Если бренду требуется обновление или он находится в самом начале пути, я помогу найти его цель и установить связь с целевой аудиторией."
       />
       <Portfolio />
+      <Contact />
     </>
   );
 }

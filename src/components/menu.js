@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Link from "next/link";
+import { navPrimary } from "../utils/data";
 
 export default function Menu() {
   const [isOpen, setOpen] = useState(false);
@@ -7,7 +9,17 @@ export default function Menu() {
     <>
       {/* Menu */}
       <div className={`menu ${isOpen ? "-open" : ""}`}>
-        <div className="menu-wrapper">menu list</div>
+        <div className="menu-wrapper">
+          <ul className="menu-box-main">
+            {navPrimary.map((item, index) => (
+              <li className="menu-box-main-item" key={index}>
+                <Link href={item.path}>
+                  <a>{item.title}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="menu-wrapper-bg" />
       </div>
 

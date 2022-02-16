@@ -16,7 +16,7 @@ export default function Services() {
                 <span className="services-item-desc">{item.description}</span>
               </div>
               <div className="services-item-read">
-                <Link href={`/services${item.slug}`}>
+                <Link href={`/services/${item.slug}`}>
                   <a data-cursor="-exclusion -lg">↗︎</a>
                 </Link>
               </div>

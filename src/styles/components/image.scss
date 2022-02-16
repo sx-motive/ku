@@ -4,8 +4,12 @@
   &.-full {
     max-width: calc(100% - 8rem);
     margin-left: 4rem;
-    padding: 0 6rem;
     height: 40rem;
+    @include media("<=phone") {
+      max-width: calc(100% - 3rem);
+      margin-left: 1.5rem;
+      height: 30rem;
+    }
   }
   img {
     object-fit: cover;

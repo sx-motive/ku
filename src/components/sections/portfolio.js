@@ -9,7 +9,7 @@ export default function Portfolio() {
       <div className="container -full">
         <div className="portfolio-wrapper">
           {portfolio.map((item, index) => (
-            <div className="portfolio-item">
+            <div className="portfolio-item" key={index}>
               <div className="portfolio-item-image">
                 <Image
                   src={item.image}
@@ -20,7 +20,7 @@ export default function Portfolio() {
               </div>
               <div className="portfolio-item-title">
                 <span className="portfolio-item-title-title">{item.title}</span>
-                <Link href={`/portfolio${item.slug}`}>
+                <Link href={`/portfolio/${item.slug}`}>
                   <a data-cursor="-exclusion -lg">↗︎</a>
                 </Link>
               </div>
