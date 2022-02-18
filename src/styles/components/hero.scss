@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  padding: 24rem 0 5rem 0;
+  padding: 50vh 0 5rem 0;
   text-align: center;
   @include media("<=phone") {
     padding: 16rem 0 5rem 0;

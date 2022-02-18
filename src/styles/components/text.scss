@@ -1,0 +1,11 @@
+.text-line-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.text-line {
+  transform-origin: top left;
+  position: relative;
+  display: block;
+}

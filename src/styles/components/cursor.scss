@@ -330,14 +330,7 @@
 }
 .ht-cursor.-lgm:before {
   transform: scale(1.7);
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
-.ht-cursor.-telegram:before {
-  transform: scale(4);
-  background-color: #fff;
-  z-index: 2;
+  background-color: $white;
 }
 
 .ht-cursor.-hidden:before {

@@ -16,10 +16,10 @@ html {
     font-size: 16px;
   }
   @include media(">tablet", "<=laptop") {
-    font-size: 18px;
+    font-size: 16px;
   }
   @include media(">laptop", "<=desktop") {
-    font-size: 22px;
+    font-size: 17px;
   }
   @include media(">desktop", "<=quad") {
     font-size: 28px;
