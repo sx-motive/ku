@@ -1,7 +1,10 @@
 .service-page-inner {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 10vh;
+  @include media("<=phone") {
+    height: 0vh;
+  }
 }
 
 .error404 {

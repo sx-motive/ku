@@ -10,6 +10,9 @@
   -o-transition: opacity 0.3s, color 0.4s;
   -moz-transition: opacity 0.3s, color 0.4s;
   transition: opacity 0.3s, color 0.4s;
+  @include media("<=phone") {
+    display: none;
+  }
 }
 .ht-cursor:before {
   content: "";
