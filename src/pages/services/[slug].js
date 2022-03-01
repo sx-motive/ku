@@ -7,7 +7,7 @@ export default function ServicePage({ item }) {
   return (
     <>
       <section className="service-page-inner"></section>
-      <Head left title={item.title} desc={item.text} />
+      <Head left title={item.title} />
       <Services />
     </>
   );

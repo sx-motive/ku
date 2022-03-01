@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "../../components/sections/head";
-import ImageBlock from "../../components/sections/image";
 
 import { portfolio } from "../../utils/data";
 
@@ -9,9 +8,6 @@ export default function PortfolioPage({ item }) {
     <>
       <section className="service-page-inner"></section>
       <Head left title={item.title} desc={item.description} />
-      <ImageBlock className="-full" src={item.image} alt={item.title} />
-
-      <ImageBlock className="-full" src={item.images[0]} alt={item.title} />
     </>
   );
 }
