@@ -22,7 +22,7 @@ export default function Header() {
         </ul>
       </div>
       <div className="header-touch">
-        Обсудить проект<span> ↗︎</span>
+        Contacts<span> ↗︎</span>
       </div>
     </header>
   );

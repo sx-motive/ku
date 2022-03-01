@@ -1,64 +1,81 @@
 .services {
   position: relative;
-  width: 100%;
-  margin-bottom: 16rem;
+  margin-bottom: 10rem;
+  hr {
+    opacity: 0.2;
+  }
 }
-
 .services-wrapper {
   position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-
 .services-item {
   position: relative;
   width: 100%;
+  padding: 5rem 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 6rem;
-  gap: 2rem;
-  margin: 0;
-  transition: all 0.2s ease-in-out;
-  &:nth-child(1) {
-    border-top: 1px solid $color-middle;
-  }
+  flex-wrap: wrap;
 }
 
 .services-item-meta {
   position: relative;
+  width: 45%;
+  padding-right: 10rem;
+  @include media("<=phone") {
+    width: 100%;
+  }
+}
+.services-item-number {
+  color: $color-middle;
 }
 .services-item-title {
-  display: block;
-  font-family: $title-ff;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  position: relative;
+  font-size: 2rem;
 }
 
-.services-item-desc {
-  font-size: 0.8rem;
-  opacity: 0.5;
-  display: none;
+.services-item-right-wrapper {
+  position: relative;
+  width: 45%;
+  @include media("<=phone") {
+    width: 100%;
+    margin-top: 4rem;
+  }
 }
 
-.services-item-read {
+.services-item-list {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.services-item-list-item {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  a {
-    padding: 1rem 1rem 1rem 1rem;
-    margin-right: -1rem;
+  flex-wrap: nowrap;
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-middle;
+  border-radius: 10rem;
+  &:hover {
+    background-color: $black;
+    color: $white;
+    transition: all 0.2s ease-in-out;
   }
+}
+
+.services-item-text {
+}
+.services-item-read {
+  position: relative;
+  margin-top: 3rem;
 }
 
 .services-item-hr-wrapper {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
-  hr {
-    opacity: 0.3;
-  }
+  left: 0;
 }

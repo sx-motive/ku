@@ -19,7 +19,7 @@ html {
     font-size: 16px;
   }
   @include media(">laptop", "<=desktop") {
-    font-size: 17px;
+    font-size: 18px;
   }
   @include media(">desktop", "<=quad") {
     font-size: 28px;
@@ -74,13 +74,25 @@ p {
   position: relative;
   width: 100%;
   &.-full {
-    max-width: calc(100% - 16rem);
+    max-width: calc(100% - 10rem);
     margin: 0 auto;
     @include media("<=tablet") {
       max-width: calc(100% - 8rem);
     }
     @include media("<=phone") {
       max-width: calc(100% - 3rem);
+    }
+  }
+  &.-center {
+    max-width: calc(60% - 10rem);
+    margin: 0 auto;
+    @include media("<=tablet") {
+      max-width: calc(70% - 8rem);
+      margin-left: 4rem;
+    }
+    @include media("<=phone") {
+      max-width: calc(100% - 3rem);
+      margin-left: 1.5rem;
     }
   }
   &.-right {
@@ -97,7 +109,7 @@ p {
   }
   &.-left {
     max-width: calc(60% - 10rem);
-    margin-left: 8rem;
+    margin-left: 5rem;
     @include media("<=tablet") {
       max-width: calc(70% - 8rem);
       margin-left: 4rem;

@@ -1,11 +1,25 @@
 import React from "react";
+import Text from "../text";
 
 export default function Head(props) {
   return (
-    <section className="section-head" id={props.id} data-scroll-section>
-      <div className={`container ${props.left ? "-left" : "-right"}`}>
-        <h2 className="section-head-title">{props.title}</h2>
-        <p className="section-head-desc">{props.desc}</p>
+    <section
+      className={`section-head ${props.className}`}
+      id={props.id}
+      data-scroll-section
+    >
+      <div
+        className={`container ${
+          props.cont == "left"
+            ? "-left"
+            : props.cont == "right"
+            ? "-right"
+            : "-center"
+        }`}
+      >
+        <h2 className="section-head-title">
+          <Text text={props.title} />
+        </h2>
       </div>
     </section>
   );

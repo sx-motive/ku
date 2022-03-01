@@ -1,7 +1,9 @@
 export const navPrimary = [
-  { title: "Главная", path: "/" },
-  { title: "Услуги", path: "/services" },
-  { title: "Работы", path: "/works" },
+  { title: "Main", path: "/" },
+  { title: "Services", path: "/services" },
+  { title: "Works", path: "/works" },
+  { title: "Mentorship 🔥", path: "/mentorship" },
+  { title: "Shop", path: "/shop" },
 ];
 
 export const socials = [
@@ -12,46 +14,39 @@ export const socials = [
 ];
 
 export const navFooter = [
-  { title: "Контакты", path: "/" },
-  { title: "Сбор данных", path: "/" },
-  { title: "Политика обработки данных", path: "/" },
+  { title: "Contacts", path: "/" },
+  { title: "Policy", path: "/" },
+  { title: "Privacy", path: "/" },
 ];
 
 export const services = [
   {
     slug: "design",
-    title: "Цифровой дизайн",
+    title: "Digital design",
     image: "/images/services/01.webp",
-    description: "Adobe Illustrator, Figma, Adobe After Effect",
-    text: "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS. Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений. Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов.",
+    text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
+    list: ["UX experiance", "UI design", "Logos"],
   },
   {
     slug: "development",
-    title: "Разработка",
+    title: "Fullstack development",
     image: "/images/services/01.webp",
-    description: "React JS, Next JS, Wordpress",
-    text: "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS. Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений. Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов.",
-  },
-  {
-    slug: "copywriting",
-    title: "Копирайтинг",
-    image: "/images/services/01.webp",
-    description: "Создаем высоконагруженные масштабируемые",
-    text: "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS. Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений. Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов.",
-  },
-  {
-    slug: "product-managment",
-    title: "Управление продуктом",
-    image: "/images/services/01.webp",
-    description: "Создаем высоконагруженные масштабируемые",
-    text: "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS. Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений. Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов.",
+    text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
+    list: ["HTML5", "CSS3", "JS", "Node", "React", "NextJS", "Wordpress"],
   },
   {
     slug: "marketing",
-    title: "Маркетинг",
+    title: "Marketing",
     image: "/images/services/01.webp",
-    description: "Создаем высоконагруженные масштабируемые",
-    text: "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS. Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений. Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов.",
+    text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
+    list: ["Brandbook", "Advertising", "Analytics"],
+  },
+  {
+    slug: "mentorship",
+    title: "Mentorship 🔥",
+    image: "/images/services/01.webp",
+    text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
+    list: ["Education", "Learning", "Consalting"],
   },
 ];
 

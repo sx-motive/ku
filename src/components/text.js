@@ -17,7 +17,7 @@ export default function Text(props) {
               y: 0,
               transition: {
                 ease: [0.6, 0.01, -0.05, 0.95],
-                duration: 2,
+                duration: 1,
               },
             }}
             viewport={{ once: false }}
