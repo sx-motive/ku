@@ -52,32 +52,32 @@ export const services = [
 
 export const portfolio = [
   {
-    slug: "floema",
-    title: "Floema jewelery",
-    image: "/images/portfolio/floema/title.webp",
+    slug: "romanova",
+    title: "Romanova Cafe",
+    image: "/images/portfolio/romanova/romanova01.webp",
     images: [
-      "/images/portfolio/floema/02.webp",
-      "/images/portfolio/floema/02.webp",
+      "/images/portfolio/romanova/romanova01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
     ],
     description: "Концепт-дизайн для ювелирного интернет-магазина",
   },
   {
-    slug: "floema",
-    title: "Floema jewelery",
-    image: "/images/portfolio/floema/title.webp",
+    slug: "beauty",
+    title: "Beauty",
+    image: "/images/portfolio/beauty/beauty01.webp",
     images: [
-      "/images/portfolio/floema/02.webp",
-      "/images/portfolio/floema/02.webp",
+      "/images/portfolio/beauty/beauty01.webp",
+      "/images/portfolio/beauty/beauty01.webp",
     ],
     description: "Концепт-дизайн для ювелирного интернет-магазина",
   },
   {
-    slug: "floema",
-    title: "Floema jewelery",
-    image: "/images/portfolio/floema/title.webp",
+    slug: "standart",
+    title: "Standart",
+    image: "/images/portfolio/standart/standart01.webp",
     images: [
-      "/images/portfolio/floema/02.webp",
-      "/images/portfolio/floema/02.webp",
+      "/images/portfolio/standart/standart01.webp",
+      "/images/portfolio/standart/standart01.webp",
     ],
     description: "Концепт-дизайн для ювелирного интернет-магазина",
   },

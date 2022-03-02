@@ -11,11 +11,11 @@
 
 .hero-title {
   font-family: $default-ff;
-  font-size: 7rem;
+  font-size: 5rem;
   display: block;
   margin-bottom: 2rem;
   @include media("<=phone") {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 

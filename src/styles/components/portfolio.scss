@@ -1,7 +1,10 @@
 .portfolio {
   position: relative;
   width: 100%;
-  margin-bottom: 16rem;
+  margin-bottom: 10rem;
+  hr {
+    opacity: 0.2;
+  }
 }
 
 .portfolio-wrapper {
@@ -14,37 +17,45 @@
 
 .portfolio-item {
   position: relative;
-  width: 30%;
-  margin-bottom: 2rem;
-  @include media(">phone", "<=tablet") {
-    width: 47%;
-  }
-  @include media("<=phone") {
-    width: 100%;
-  }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+.portfolio-item-title-title {
+  position: relative;
+  display: flex;
+}
+
+.portfolio-item-meta {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 1rem;
 }
 
 .portfolio-item-image {
   position: relative;
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   overflow: hidden;
   img {
     object-fit: cover;
   }
 }
 
-.portfolio-item-title {
-  position: relative;
+.portfolio-item-image-transition {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0;
-}
-
-.portfolio-item-title-title {
-  font-size: 1.6rem;
-}
-.portfolio-item-desc {
-  display: none;
+  z-index: 2;
+  &.transition-1 {
+    background-color: $white;
+  }
+  &.transition-2 {
+    background-color: $light;
+  }
 }

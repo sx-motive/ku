@@ -40,4 +40,8 @@
 .header-touch {
   position: relative;
   cursor: pointer;
+  line-height: 0;
+  border: 1px solid $color-middle;
+  border-radius: 3rem;
+  padding: 1.3rem 1.7rem;
 }
