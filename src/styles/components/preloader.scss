@@ -1,0 +1,44 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: $light;
+}
+.preloader-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+}
+.preloader-text {
+  position: absolute;
+  font-size: 3rem;
+  font-family: $title-ff;
+  color: $black;
+}
+
+.preloader-percents {
+  position: absolute;
+  top: 85vh;
+  left: 10%;
+  width: 80%;
+  display: none;
+}
+
+.preloader-background-transition {
+  position: absolute;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  background-color: $light;
+  z-index: 3;
+}

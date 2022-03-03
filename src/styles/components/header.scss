@@ -2,35 +2,43 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   width: 100%;
-  padding: 3.3rem 4rem 0 4rem;
+  padding: 2.5rem 4rem 0 16rem;
   z-index: 2;
-  .header-logo {
-    margin-left: 4rem;
-    transform: translateY(0.6rem);
-  }
 
   @include media("<=tablet") {
-    padding: 3.3rem 4rem 0 4rem;
+    padding: 2.5rem 4rem 0 4rem;
   }
   @include media("<=phone") {
-    padding: 2.2rem 1.5rem 0 1.5rem;
+    padding: 1.1rem 1.1rem 0 1.5rem;
   }
 }
 
 .header-nav ul {
-  position: absolute;
-
+  position: relative;
   line-height: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1.6rem;
   li {
     position: relative;
     display: block;
+    width: 100%;
+  }
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+
+.header-nav-socials ul {
+  position: relative;
+  line-height: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  li {
+    position: relative;
   }
   @include media("<=phone") {
     display: none;

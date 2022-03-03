@@ -9,10 +9,7 @@ import Contact from "../components/sections/contact";
 export default function Home() {
   return (
     <>
-      <Hero
-        subtitle="Frontend Developer & Digital Designer"
-        title="Denis Kunitsyn"
-      />
+      <Hero subtitle=" " title="Frontend Developer & Digital Designer" />
       <section className="image-section" data-scroll-section>
         <div
           className="image-section-container"

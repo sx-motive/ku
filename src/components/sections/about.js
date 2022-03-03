@@ -14,21 +14,10 @@ export default function About() {
         </p>
         <p>
           <Text text="I believe in creating beautiful and complete brand experiences by helping them connect with their intention and know-how to communicate their purpose." />
-        </p>
-        <p>
-          <Text
-            text="Present
-            Currently I'm working at Walsh and also as a freelancer looking for new brands to create complete branding experiences and help them find their voice.
-            
-            Previously
-            I have worked on Fibra for 3 years focusing on branding, strategic development and packaging.
-            
-            Education
-            I studied in Perú at Universidad de Ciencias y Artes de America Latina. Graduating with a major in Graphic Design and specialized in Branding.
-            
-            Collaborations
-            I believe collaboration allows us to create a different narratives for each brand. That's why depending on the project I love collaborating with specialists from different fields"
-          />
+          <Text text="Present Currently I'm working at Walsh and also as a freelancer looking for new brands to create complete branding experiences and help them find their voice." />
+          <Text text=" Previously I have worked on Fibra for 3 years focusing on branding, strategic development and packaging." />
+          <Text text="Education I studied in Perú at Universidad de Ciencias y Artes de America Latina. Graduating with a major in Graphic Design and specialized in Branding." />
+          <Text text="Collaborations I believe collaboration allows us to create a different narratives for each brand. That's why depending on the project I love collaborating with specialists from different fields" />
         </p>
       </div>
     </section>

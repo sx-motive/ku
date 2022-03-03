@@ -7,11 +7,11 @@ import "../styles/main.scss";
 // components import
 import Layout from "../components/layout";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} key={router.route} />
       </Layout>
       <Script src="./cursor.js" />
     </>

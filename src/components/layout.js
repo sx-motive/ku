@@ -1,13 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 
 // components import
 import Header from "./header";
 import Footer from "./footer";
 import Menu from "./menu";
+import Preloader from "./preloader";
 
 export default function Layout({ children }) {
+  // preloader
+  const [loading, setLoading] = useState(true);
   // locomotive scroll
+
+  useEffect(() => {
+    loading
+      ? document.querySelector("body").classList.add("loading")
+      : document.querySelector("body").classList.remove("loading");
+  }, [loading]);
+
   useEffect(() => {
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
@@ -17,7 +28,7 @@ export default function Layout({ children }) {
         smoothMobile: true,
         touchMultiplier: 0.3,
         resetNativeScroll: true,
-        lerp: 0.085,
+        lerp: 0.03,
       });
     });
 
@@ -28,10 +39,18 @@ export default function Layout({ children }) {
       <Head>
         <title>Denis Kunitsyn</title>
       </Head>
-      <Header />
-      {children}
-      <Footer />
-      <Menu />
+      {loading ? (
+        <motion.div key="loader">
+          <Preloader setLoading={setLoading} />
+        </motion.div>
+      ) : (
+        <>
+          <Header />
+          {children}
+          <Footer />
+          <Menu />
+        </>
+      )}
     </main>
   );
 }
