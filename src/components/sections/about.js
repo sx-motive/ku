@@ -1,15 +1,14 @@
 import React from "react";
 import Text from "../text";
-import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <section className="about" data-scroll-section>
-      <div className="container -left">
+      <div className="container -center">
         <p className="about-desc">
           <Text
             text="Over the lasts years I realized - It's not enough to simply sell products anymore, people need brands that lead from the heart and share their values.
-            That's why I focus on Branding. Whether a brand is looking for a refresh or finding its voice at the very begging, I will help find its purpose and connect with their target audience."
+            That's why I focus on Branding. Whether a brand is looking for a refresh or finding its voice at the very begging, I will help find its purpose and connect with their target."
           />
         </p>
         <p>

@@ -31,7 +31,7 @@ export default function Home() {
           <Img src="/images/03.webp" fallback="/images/02.webp" alt="banner" />
         </div>
       </section>
-      <Head cont="left" title="About" />
+      <Head cont="center" title="About" />
       <About />
 
       <Head cont="left" title="Works" />

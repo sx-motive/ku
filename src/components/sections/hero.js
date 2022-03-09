@@ -6,7 +6,7 @@ export default function Hero(props) {
   return (
     <section className="hero" data-scroll-section>
       <div className="container -full">
-        <span className="hero-title">
+        <div className="hero-title">
           <SplitText
             className="wrap-text"
             LineWrapper={({ children }) => (
@@ -31,7 +31,7 @@ export default function Hero(props) {
           >
             {props.title}
           </SplitText>
-        </span>
+        </div>
         <span className="hero-subtitle">{props.subtitle}</span>
         <motion.div
           className="hero-avaible"

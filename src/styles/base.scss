@@ -19,7 +19,7 @@ html {
     font-size: 14px;
   }
   @include media(">laptop", "<=desktop") {
-    font-size: 15px;
+    font-size: 16px;
   }
   @include media(">desktop", "<=quad") {
     font-size: 28px;
@@ -29,6 +29,12 @@ html {
   }
 }
 
+body.loading {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -36,8 +42,8 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1;
-  color: $black;
-  background-color: $light;
+  color: $white;
+  background-color: $dark;
 }
 
 a {

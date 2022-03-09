@@ -1,21 +1,10 @@
 import React from "react";
-import { navPrimary, socials } from "../utils/data";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { navPrimary, socials } from "../utils/data";
 
 export default function Header() {
   return (
-    <motion.header
-      className="header"
-      data-scroll-section
-      initial={{ opacity: 0, y: -30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        ease: "easeInOut",
-        duration: 1,
-        delay: 2,
-      }}
-    >
+    <header className="header" data-scroll-section>
       <div className="header-nav">
         <ul>
           {navPrimary.map((item, index) => (
@@ -41,6 +30,6 @@ export default function Header() {
       <div className="header-touch">
         Contacts<span> ↗︎</span>
       </div>
-    </motion.header>
+    </header>
   );
 }

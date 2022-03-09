@@ -1,12 +1,12 @@
 .header {
   position: absolute;
+  top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: baseline;
   width: 100%;
   padding: 2.5rem 4rem 0 16rem;
   z-index: 2;
-
   @include media("<=tablet") {
     padding: 2.5rem 4rem 0 4rem;
   }
@@ -21,6 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
+  display: none;
   li {
     position: relative;
     display: block;
@@ -37,6 +38,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.3rem;
+  margin-right: 4rem;
   li {
     position: relative;
   }
