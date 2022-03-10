@@ -2,6 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SplitText } from "@cyriacbr/react-split-text";
 
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
 const item = {
   hidden: { opacity: 0, skewY: 15, y: "90%" },
   show: {
@@ -10,16 +18,16 @@ const item = {
     y: 0,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 2.6,
+      duration: 2.2,
     },
   },
   exit: {
     opacity: 0,
-    skewY: -15,
+    skewY: -5,
     y: "-90%",
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 0.8,
+      duration: 1.2,
     },
   },
 };
@@ -34,19 +42,17 @@ export default function Preloader({ setLoading }) {
         animate="show"
         exit="exit"
       >
-        <motion.div className="preloader-text" variants={item}>
-          <SplitText
-            className="wrap-text"
-            LineWrapper={({ children }) => (
-              <div className="text-line-wrap">
-                <motion.span className="text-line" variants={item}>
-                  {children}
-                </motion.span>
-              </div>
-            )}
-          >
-            Hello there!
-          </SplitText>
+        <motion.div className="container -center" variants={container}>
+          <div className="preloader-line-wrap">
+            <motion.div className="line" variants={item}>
+              Denis
+            </motion.div>
+          </div>
+          <div className="preloader-line-wrap">
+            <motion.div className="line" variants={item}>
+              Kunitsyn
+            </motion.div>
+          </div>
         </motion.div>
       </motion.div>
     </div>

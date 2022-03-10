@@ -3,13 +3,14 @@
   width: 100%;
   height: auto;
   padding-bottom: 10rem;
+  padding-top: 10rem;
   background-color: $light;
   color: $black;
 }
 
 .contact-touch {
   position: absolute;
-  top: 0%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: $white;

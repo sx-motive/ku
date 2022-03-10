@@ -9,6 +9,11 @@
     font-family: $title-ff;
     font-weight: 400;
     width: 100%;
+    .text-line-wrap {
+      position: relative;
+      overflow: hidden;
+      margin-right: 1rem;
+    }
   }
   .section-head-desc {
     width: 100%;

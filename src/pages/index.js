@@ -19,7 +19,7 @@ export default function Home() {
           <Img src="/images/02.webp" fallback="/images/02.webp" alt="banner" />
         </div>
       </section>
-      <Head cont="left" title="Services" />
+      <Head cont="left" title="How can I help" />
       <Services />
 
       <section className="image-section" data-scroll-section>
@@ -31,10 +31,10 @@ export default function Home() {
           <Img src="/images/03.webp" fallback="/images/02.webp" alt="banner" />
         </div>
       </section>
-      <Head cont="center" title="About" />
+      <Head cont="center" title="Who is" />
       <About />
 
-      <Head cont="left" title="Works" />
+      <Head cont="left" title="What did" />
       <Portfolio />
 
       <Contact />

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Head from "next/head";
 
 // components import
 import Header from "./header";
@@ -19,13 +18,12 @@ export default function Layout({ children }) {
         resetNativeScroll: true,
       });
     });
+
     return () => scroll.destroy();
   });
+
   return (
-    <main data-scroll-section>
-      <Head>
-        <title>Denis Kunitsyn</title>
-      </Head>
+    <main data-scroll-container>
       <Header />
       {children}
       <Footer />

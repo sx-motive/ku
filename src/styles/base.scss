@@ -43,7 +43,7 @@ body {
   font-weight: 300;
   line-height: 1;
   color: $color-gray-pink;
-  background-color: $dark;
+  background-color: $black;
 }
 
 a {
@@ -82,7 +82,7 @@ p {
   position: relative;
   width: 100%;
   &.-full {
-    max-width: calc(100% - 10rem);
+    max-width: calc(100% - 8rem);
     margin: 0 auto;
     @include media("<=tablet") {
       max-width: calc(100% - 8rem);
@@ -92,7 +92,7 @@ p {
     }
   }
   &.-center {
-    max-width: calc(60% - 10rem);
+    max-width: calc(60% - 8rem);
     margin: 0 auto;
     @include media("<=tablet") {
       max-width: calc(70% - 8rem);
@@ -117,7 +117,7 @@ p {
   }
   &.-left {
     max-width: 46%;
-    margin-left: 5%;
+    margin-left: 4rem;
     @include media("<=tablet") {
       max-width: calc(70% - 8rem);
       margin-left: 4rem;

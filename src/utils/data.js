@@ -54,6 +54,7 @@ export const portfolio = [
   {
     slug: "romanova",
     title: "Romanova Cafe",
+    video: "/videos/01.mp4",
     image: "/images/portfolio/romanova/romanova01.webp",
     images: [
       "/images/portfolio/romanova/romanova01.webp",
@@ -64,6 +65,7 @@ export const portfolio = [
   {
     slug: "beauty",
     title: "Beauty",
+    video: "/videos/02.mp4",
     image: "/images/portfolio/beauty/beauty01.webp",
     images: [
       "/images/portfolio/beauty/beauty01.webp",
@@ -74,6 +76,7 @@ export const portfolio = [
   {
     slug: "standart",
     title: "Standart",
+    video: "/videos/03.mp4",
     image: "/images/portfolio/standart/standart01.webp",
     images: [
       "/images/portfolio/standart/standart01.webp",

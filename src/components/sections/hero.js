@@ -2,9 +2,32 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SplitText } from "@cyriacbr/react-split-text";
 
+const anim = {
+  initial: {
+    opacity: 1,
+  },
+  show: {
+    opacity: 0,
+    transition: {
+      ease: [0.6, 0.01, -0.05, 0.95],
+      duration: 1.2,
+    },
+  },
+};
+
 export default function Hero(props) {
   return (
-    <section className="hero" data-scroll-section>
+    <motion.section
+      className="hero"
+      data-scroll-section
+      initial={{ height: "100vh" }}
+      animate={{ height: "100vh" }}
+      transition={{
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 2,
+        delay: 3.6,
+      }}
+    >
       <div className="container -full">
         <div className="hero-title">
           <SplitText
@@ -22,7 +45,7 @@ export default function Hero(props) {
                       duration: 2,
                     },
                   }}
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                 >
                   {children}
                 </motion.span>
@@ -32,7 +55,7 @@ export default function Hero(props) {
             {props.title}
           </SplitText>
         </div>
-        <span className="hero-subtitle">{props.subtitle}</span>
+
         <motion.div
           className="hero-avaible"
           initial={{ opacity: 0 }}
@@ -46,6 +69,6 @@ export default function Hero(props) {
           • available for freelance work
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

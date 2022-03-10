@@ -11,9 +11,24 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.preloader-text {
-  font-family: $title-ff;
-  font-size: 6rem;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .preloader-line-wrap {
+    font-family: $title-ff;
+    font-size: 5rem;
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  }
+  .line {
+    transform-origin: top left;
+    position: relative;
+    display: block;
+  }
 }
