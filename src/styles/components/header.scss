@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  top: -8rem;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -8,7 +8,7 @@
   padding: 2.5rem 4rem 0 16rem;
   z-index: 2;
   opacity: 0;
-  mix-blend-mode: difference;
+
   @include media("<=tablet") {
     padding: 2.5rem 4rem 0 4rem;
   }

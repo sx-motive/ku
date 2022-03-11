@@ -42,8 +42,12 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1;
-  color: $color-gray-pink;
-  background-color: $black;
+  color: $black;
+  background-color: $light;
+}
+
+section {
+  background-color: $light;
 }
 
 a {

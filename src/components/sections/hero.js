@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SplitText } from "@cyriacbr/react-split-text";
+import Button from "../button";
 
 const anim = {
   initial: {
@@ -68,6 +69,11 @@ export default function Hero(props) {
         >
           • available for freelance work
         </motion.div>
+        <div className="hero-button-wrap">
+          <Button href="/" className="round">
+            Explore * More * Scroll * Down *
+          </Button>
+        </div>
       </div>
     </motion.section>
   );

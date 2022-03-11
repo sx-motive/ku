@@ -6,15 +6,14 @@ import { navPrimary, socials } from "../utils/data";
 export default function Header() {
   return (
     <motion.header
+      transition={{
+        ease: [1, -0.51, 1, -0.86],
+        default: { duration: 2 },
+      }}
       className="header"
       data-scroll-section
-      initial={{ opacity: 0, top: "-8rem" }}
-      animate={{ opacity: 1, top: 0 }}
-      transition={{
-        ease: "easeInOut",
-        duration: 1,
-        delay: 2.6,
-      }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <div className="header-nav">
         <ul>

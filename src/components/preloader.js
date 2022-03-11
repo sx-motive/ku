@@ -1,28 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { SplitText } from "@cyriacbr/react-split-text";
 
 const container = {
   show: {
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.35,
     },
   },
 };
 
 const item = {
-  hidden: { opacity: 0, skewY: 15, y: "90%" },
+  hidden: { opacity: 1, skewY: 15, y: "90%" },
   show: {
     opacity: 1,
     skewY: 0,
     y: 0,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 2.2,
+      duration: 2.6,
     },
   },
   exit: {
-    opacity: 0,
+    opacity: 1,
     skewY: -5,
     y: "-90%",
     transition: {
