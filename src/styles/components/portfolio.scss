@@ -21,6 +21,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 3%;
+  @include media("<=tablet") {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
   &:nth-child(2) {
   }
   &:nth-child(3) {

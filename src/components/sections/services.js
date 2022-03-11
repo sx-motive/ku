@@ -23,7 +23,7 @@ export default function Services() {
         />
         <div className="services-wrapper">
           {services.map((item, index) => (
-            <div className="services-item" key={index}>
+            <div className="services-item" key={index + item.title}>
               <div className="services-item-meta">
                 {/*
                 <span className="services-item-number">
@@ -42,9 +42,7 @@ export default function Services() {
                   ))}
                 </ul>
                 <div className="services-item-text">
-                  <p>
-                    <Text text={item.text} />
-                  </p>
+                  <Text text={item.text} />
                 </div>
                 <div className="services-item-read">
                   <Link href={`/services/${item.slug}`}>

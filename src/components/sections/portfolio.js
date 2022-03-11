@@ -24,7 +24,7 @@ export default function Portfolio() {
       <div className="container -full">
         <div className="portfolio-wrapper">
           {portfolio.map((item, index) => (
-            <div className="portfolio-item" key={index}>
+            <div className="portfolio-item" key={index + item.title}>
               {item.video ? (
                 <video
                   autoPlay

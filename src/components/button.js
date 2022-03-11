@@ -29,7 +29,7 @@ export default function Button(props) {
               <text>
                 <textPath
                   xlinkHref="#textcircle"
-                  ariaLabel={props.children}
+                  aria-label={props.children}
                   textLength="900"
                 >
                   {props.children}

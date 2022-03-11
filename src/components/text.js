@@ -7,7 +7,7 @@ export default function Text(props) {
     <SplitText
       className="wrap-text"
       LineWrapper={({ children }) => (
-        <div className="text-line-wrap">
+        <p className="text-line-wrap">
           <motion.span
             className="text-line"
             initial={{ opacity: 0, skewY: 15, y: "90%" }}
@@ -24,7 +24,7 @@ export default function Text(props) {
           >
             {children}
           </motion.span>
-        </div>
+        </p>
       )}
     >
       {props.text}

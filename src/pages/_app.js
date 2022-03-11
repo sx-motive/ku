@@ -27,12 +27,12 @@ function MyApp({ Component, pageProps, router }) {
           <Preloader setLoading={setLoading} />
         </motion.div>
       ) : (
-        <>
+        <motion.div key="content">
           <Layout>
             <Component {...pageProps} key={router.route} />
           </Layout>
           <Script src="cursor.js" />
-        </>
+        </motion.div>
       )}
     </AnimatePresence>
   );
