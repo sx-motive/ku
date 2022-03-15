@@ -1,28 +1,25 @@
-// base
-@import "./components/locomotive.scss";
-@import "variables.scss";
-@import "fonts.scss";
-@import "breakpoints.scss";
+// utils
+@import "./utils/variables.scss";
+// components
 @import "./components/preloader.scss";
+
+@import "./utils/fonts.scss";
+@import "./utils/locomotive.scss";
+
+@import "./utils/media.scss";
+
+// base
 @import "base.scss";
 
 // components
-@import "./components/cursor.scss";
 @import "./components/header.scss";
-@import "./components/menu.scss";
 @import "./components/footer.scss";
-@import "./components/img.scss";
-@import "./components/text.scss";
-@import "./components/button.scss";
+@import "./components/menu.scss";
 
-// sections
-@import "./components/marquee.scss";
-@import "./components/hero.scss";
-@import "./components/head.scss";
-@import "./components/services.scss";
-@import "./components/portfolio.scss";
-@import "./components/about.scss";
-@import "./components/contact.scss";
+// utils
+@import "./utils/cursor.scss";
+@import "./utils/text.scss";
+@import "./utils/other.scss";
 
-// other
-@import "./components/other.scss";
+// comp
+@import "./components/sections.scss";

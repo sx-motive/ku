@@ -1,4 +1,4 @@
-.footer {
+footer {
   position: relative;
   width: 100%;
   display: flex;
@@ -6,11 +6,11 @@
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4rem 3rem 4rem;
+  padding: 2rem 4rem 3.5rem 4rem;
   font-size: 0.85rem;
-  background-color: $light;
-  color: $black;
-  margin-top: -2px;
+  background-color: $black;
+  color: $white;
+  margin-top: -1px;
 }
 
 .footer-nav ul {

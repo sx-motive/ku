@@ -14,7 +14,7 @@ export default function Menu() {
             {navPrimary.map((item, index) => (
               <li className="menu-box-main-item" key={index}>
                 <Link href={item.path}>
-                  <a>{item.title}</a>
+                  <a onClick={() => setOpen(!isOpen)}>{item.title}</a>
                 </Link>
               </li>
             ))}

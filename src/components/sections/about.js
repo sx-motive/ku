@@ -4,7 +4,7 @@ import Text from "../text";
 export default function About() {
   return (
     <section className="about" data-scroll-section>
-      <div className="container -center">
+      <div className="container -right">
         <div className="about-desc">
           <Text
             text="Over the lasts years I realized - It's not enough to simply sell products anymore, people need brands that lead from the heart and share their values.

@@ -6,7 +6,7 @@ import { portfolio } from "../../utils/data";
 export default function PortfolioPage({ item }) {
   return (
     <>
-      <section className="service-page-inner"></section>
+      <section className="service-page-inner" data-scroll-section></section>
       <Head left title={item.title} desc={item.description} />
     </>
   );

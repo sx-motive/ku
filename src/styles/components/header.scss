@@ -1,13 +1,11 @@
 .header {
   position: absolute;
-  top: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: baseline;
   width: 100%;
-  padding: 2.5rem 4rem 0 16rem;
+  padding: 3rem 4rem 0 4rem;
   z-index: 2;
-  opacity: 0;
 
   @include media("<=tablet") {
     padding: 2.5rem 4rem 0 4rem;
@@ -21,9 +19,7 @@
   position: relative;
   line-height: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.6rem;
-  display: none;
+  gap: 2rem;
   li {
     position: relative;
     display: block;
@@ -40,20 +36,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.3rem;
-  margin-right: 4rem;
   li {
     position: relative;
   }
   @include media("<=phone") {
     display: none;
   }
-}
-
-.header-touch {
-  position: relative;
-  cursor: pointer;
-  line-height: 0;
-  border: 1px solid $color-middle;
-  border-radius: 3rem;
-  padding: 1.3rem 1.7rem;
 }

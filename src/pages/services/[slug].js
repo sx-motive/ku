@@ -6,7 +6,7 @@ import { services } from "../../utils/data";
 export default function ServicePage({ item }) {
   return (
     <>
-      <section className="service-page-inner"></section>
+      <section className="service-page-inner" data-scroll-section></section>
       <Head cont="left" title={item.title} />
       <Services />
     </>

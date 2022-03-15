@@ -4,7 +4,7 @@ import Img from "../components/sections/img";
 import Portfolio from "../components/sections/portfolio";
 import Head from "../components/sections/head";
 import Services from "../components/sections/services";
-import Contact from "../components/sections/contact";
+import Prefooter from "../components/sections/prefooter";
 
 export default function Home() {
   return (
@@ -16,10 +16,10 @@ export default function Home() {
           data-scroll
           data-scroll-speed="-5"
         >
-          <Img src="/images/02.webp" fallback="/images/02.webp" alt="banner" />
+          <Img src="/images/03.webp" fallback="/images/01.webp" alt="banner" />
         </div>
       </section>
-      <Head cont="left" title="How can I help" />
+      <Head cont="left" title="Great brands need great decisions" />
       <Services />
 
       <section className="image-section" data-scroll-section>
@@ -31,13 +31,14 @@ export default function Home() {
           <Img src="/images/03.webp" fallback="/images/02.webp" alt="banner" />
         </div>
       </section>
-      <Head cont="center" title="Who is" />
+      <Head
+        cont="right"
+        title="We can create an amazing digital experience together"
+      />
       <About />
 
-      <Head cont="left" title="What did" />
+      <Head cont="left" title="Selected works" />
       <Portfolio />
-
-      <Contact />
     </>
   );
 }

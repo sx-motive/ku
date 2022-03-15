@@ -1,3 +1,9 @@
+body.loading {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
 .preloader {
   position: fixed;
   height: 100%;
@@ -19,7 +25,7 @@
   }
   .preloader-line-wrap {
     font-family: $title-ff;
-    font-size: 5rem;
+    font-size: 6rem;
     position: relative;
     width: 100%;
     display: block;

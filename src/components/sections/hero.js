@@ -1,34 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SplitText } from "@cyriacbr/react-split-text";
 import Button from "../button";
 
-const anim = {
-  initial: {
-    opacity: 1,
-  },
-  show: {
-    opacity: 0,
-    transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 1.2,
-    },
-  },
-};
-
 export default function Hero(props) {
   return (
-    <motion.section
-      className="hero"
-      data-scroll-section
-      initial={{ height: "100vh" }}
-      animate={{ height: "100vh" }}
-      transition={{
-        ease: [0.6, 0.01, -0.05, 0.95],
-        duration: 2,
-        delay: 3.6,
-      }}
-    >
+    <motion.section className="hero" data-scroll-section>
       <div className="container -full">
         <div className="hero-title">
           <SplitText
@@ -56,19 +33,6 @@ export default function Hero(props) {
             {props.title}
           </SplitText>
         </div>
-
-        <motion.div
-          className="hero-avaible"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            ease: "easeInOut",
-            duration: 1,
-            delay: 2,
-          }}
-        >
-          • available for freelance work
-        </motion.div>
         <div className="hero-button-wrap">
           <Button href="/" className="round">
             Explore * More * Scroll * Down *
