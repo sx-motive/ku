@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Text from "../text";
-
-// data import
 import { services } from "../../utils/data";
 
 export default function Services() {
@@ -24,31 +22,63 @@ export default function Services() {
         <div className="services-wrapper">
           {services.map((item, index) => (
             <div className="services-item" key={index + item.title}>
+              <div
+                className="services-item-image"
+                data-scroll
+                data-scroll-speed="-1"
+              >
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <source src={item.video} />
+                </video>
+              </div>
               <div className="services-item-meta">
-                {/*
-                <span className="services-item-number">
-                  <Text text={index / 4 + 331 * 0.24} />
-                </span>*/}
                 <span className="services-item-title">
                   <Text text={item.title} />
                 </span>
               </div>
               <div className="services-item-right-wrapper">
-                <ul className="services-item-list">
+                <motion.ul
+                  className="services-item-list"
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: {
+                      ease: [0.6, 0.01, -0.05, 0.95],
+                      duration: 2,
+                    },
+                  }}
+                  viewport={{ once: false }}
+                >
                   {item.list.map((itemList, index) => (
                     <li className="services-item-list-item" key={index}>
                       <Text text={itemList} />
                     </li>
                   ))}
-                </ul>
+                </motion.ul>
                 <div className="services-item-text">
                   <Text text={item.text} />
                 </div>
-                <div className="services-item-read">
+                <motion.div
+                  className="services-item-read"
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: {
+                      ease: [0.6, 0.01, -0.05, 0.95],
+                      duration: 2,
+                    },
+                  }}
+                  viewport={{ once: false }}
+                >
                   <Link href={`/services/${item.slug}`}>
                     <a data-cursor="-exclusion -lg">Read more ↗︎</a>
                   </Link>
-                </div>
+                </motion.div>
               </div>
               <div className="services-item-hr-wrapper">
                 <motion.hr

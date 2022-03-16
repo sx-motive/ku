@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const container = {
   show: {
     transition: {
-      staggerChildren: 0.35,
+      staggerChildren: 0.45,
     },
   },
 };

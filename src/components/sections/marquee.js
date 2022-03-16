@@ -31,7 +31,7 @@ export default function Marquee(props) {
     animateMarquee(marqueeWrapper, 29000);
   });
   return (
-    <div className="marquee">
+    <div className="marquee" data-scroll data-scroll-speed="-5">
       <div className="marquee-wrapper" id="marquee-wrapper">
         <div className="marquee-text">{props.text}</div>
       </div>

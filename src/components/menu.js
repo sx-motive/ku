@@ -30,7 +30,7 @@ export default function Menu() {
         onClick={() => setOpen(!isOpen)}
         data-magnetic
         data-cursor-stick="#cursor-stick-area"
-        data-cursor="-exclusion -lgm"
+        data-cursor="-exclusion -menu"
       >
         <div className={`burger ${isOpen ? "-open" : ""}`}></div>
       </div>

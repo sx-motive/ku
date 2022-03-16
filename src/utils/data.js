@@ -23,6 +23,7 @@ export const services = [
   {
     slug: "design",
     title: "Digital design",
+    video: "/videos/04.mp4",
     image: "/images/services/01.webp",
     text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
     list: ["UX experiance", "UI design", "Logos"],
@@ -30,6 +31,7 @@ export const services = [
   {
     slug: "development",
     title: "Fullstack development",
+    video: "/videos/05.mp4",
     image: "/images/services/01.webp",
     text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
     list: ["HTML5", "CSS3", "JS", "Node", "React", "NextJS", "Wordpress"],
@@ -37,6 +39,7 @@ export const services = [
   {
     slug: "marketing",
     title: "Marketing",
+    video: "/videos/02.mp4",
     image: "/images/services/01.webp",
     text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
     list: ["Brandbook", "Advertising", "Analytics"],
@@ -44,6 +47,7 @@ export const services = [
   {
     slug: "mentorship",
     title: "Mentorship",
+    video: "/videos/06.mp4",
     image: "/images/services/01.webp",
     text: "Jonahbolden Creative Director / Brainchild of 365 Days of Rae Jonah is Australian born & raised with African-American and Egyptian rooted ethnicity. After leaving Australia for the USA when he was just 15 years old, Jonah took a bet on himself and followed his childhood dreams with nothing but a vision. He attended Findlay Prep & Brewster Academy during his highschool career and went on to play college at UCLA. He was drafted #36th in the 2017 NBA draft and would go on to play three seasons. Nowadays, Jonah allocates his energy to creating digital experiences for clients at Mative Labs, investing into DeFi protocols via Athletes Block Capital, pioneering the depths of web3 through Bolden Ventures, and travelling the world with family.",
     list: ["Education", "Learning", "Consalting"],

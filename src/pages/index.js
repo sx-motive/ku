@@ -16,7 +16,9 @@ export default function Home() {
           data-scroll
           data-scroll-speed="-5"
         >
-          <Img src="/images/03.webp" fallback="/images/01.webp" alt="banner" />
+          <video autoPlay muted loop style={{ width: "100%", height: "100%" }}>
+            <source src="/videos/04.mp4" />
+          </video>
         </div>
       </section>
       <Head cont="left" title="Great brands need great decisions" />
