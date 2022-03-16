@@ -2,8 +2,6 @@ export const navPrimary = [
   { title: "Main", path: "/" },
   { title: "Services", path: "/services" },
   { title: "Works", path: "/works" },
-  { title: "Mentorship", path: "/mentorship" },
-  { title: "Shop", path: "/shop" },
 ];
 
 export const socials = [

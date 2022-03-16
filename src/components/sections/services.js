@@ -22,7 +22,7 @@ export default function Services() {
         <div className="services-wrapper">
           {services.map((item, index) => (
             <div className="services-item" key={index + item.title}>
-              <div
+              {/*<div
                 className="services-item-image"
                 data-scroll
                 data-scroll-speed="-1"
@@ -35,7 +35,7 @@ export default function Services() {
                 >
                   <source src={item.video} />
                 </video>
-              </div>
+              </div>*/}
               <div className="services-item-meta">
                 <span className="services-item-title">
                   <Text text={item.title} />

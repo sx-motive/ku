@@ -10,17 +10,6 @@ export default function Home() {
   return (
     <>
       <Hero title="Frontend Developer & Digital Designer" />
-      <section className="image-section" data-scroll-section>
-        <div
-          className="image-section-container"
-          data-scroll
-          data-scroll-speed="-5"
-        >
-          <video autoPlay muted loop style={{ width: "100%", height: "100%" }}>
-            <source src="/videos/04.mp4" />
-          </video>
-        </div>
-      </section>
       <Head cont="left" title="Great brands need great decisions" />
       <Services />
 

@@ -21,7 +21,7 @@
 section.hero {
   position: relative;
   width: 100%;
-  padding: 15rem 0;
+  height: 100vh;
   .container {
     height: 100%;
     display: flex;
@@ -30,30 +30,24 @@ section.hero {
   .hero-title {
     position: relative;
     font-family: $title-ff;
-    font-size: 6rem;
+    font-size: 7rem;
+    letter-spacing: -0.6rem;
     text-align: center;
     margin: 0 auto;
     line-height: 1.2;
     width: 100%;
     max-width: 70%;
-
-    @include media("<=tablet") {
-      font-size: 5rem;
-      max-width: 100%;
-    }
-    @include media("<=phone") {
-      font-size: 3.2rem;
-      max-width: 100%;
-      text-align: left;
-      left: 0;
-    }
+    text-transform: uppercase;
+    color: $white;
+    mix-blend-mode: difference;
   }
-  .hero-button-wrap {
+  .hero-image {
     position: absolute;
-    left: -10%;
-    bottom: -6rem;
-    cursor: default;
-    user-select: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    filter: grayscale(100%);
   }
 }
 

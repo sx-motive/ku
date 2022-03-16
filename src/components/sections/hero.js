@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { SplitText } from "@cyriacbr/react-split-text";
-import Button from "../button";
 
 export default function Hero(props) {
   return (
@@ -33,12 +32,17 @@ export default function Hero(props) {
             {props.title}
           </SplitText>
         </div>
-        <div className="hero-button-wrap">
-          <Button href="/" className="round">
-            Explore * More * Scroll * Down *
-          </Button>
-        </div>
       </div>
+      <motion.div
+        className="hero-image"
+        initial={{ y: "100%" }}
+        animate={{ y: 0 }}
+        transition={{ duration: 2 }}
+      >
+        <video autoPlay muted loop style={{ width: "100%", height: "100%" }}>
+          <source src="/videos/05.mp4" />
+        </video>
+      </motion.div>
     </motion.section>
   );
 }

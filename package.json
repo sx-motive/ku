@@ -20,6 +20,7 @@
     "gsap": "^3.9.1",
     "include-media": "^1.4.10",
     "locomotive-scroll": "^4.1.4",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "splitting": "^1.0.6"
   }
 }
