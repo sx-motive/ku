@@ -2,17 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SplitText } from "@cyriacbr/react-split-text";
 
-export default function Text(props) {
+export default function Caption(props) {
   return (
     <SplitText
-      className="wrap-text"
+      className={`caption ${props.tag}`}
       LineWrapper={({ children }) => (
-        <p className="text-line-wrap">
+        <span className="caption-line-wrap">
           <motion.span
             className="text-line"
-            initial={{ opacity: 0, skewY: 15, y: "90%" }}
+            initial={{ skewY: 25, y: "90%" }}
             whileInView={{
-              opacity: 1,
               skewY: 0,
               y: 0,
               transition: {
@@ -24,10 +23,10 @@ export default function Text(props) {
           >
             {children}
           </motion.span>
-        </p>
+        </span>
       )}
     >
-      {props.text}
+      {props.children}
     </SplitText>
   );
 }

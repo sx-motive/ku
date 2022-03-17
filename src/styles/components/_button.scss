@@ -1,0 +1,48 @@
+.button[data-magnetic]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+  }
+  
+  .round {
+    padding: 0;
+    background: none;
+    -webkit-clip-path: circle(40% at 50% 50%);
+    clip-path: circle(40% at 50% 50%);
+  }
+  
+  .round:focus-visible {
+    background: #443ffc;
+  }
+  
+  .textcircle {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+  
+  .textcircle text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    fill: $black;
+  }
+  
+  .textcircle textPath {
+    letter-spacing: 1rem; /* Firefox needs this */
+  }
+  
+  .round .textcircle {
+    animation: rotateIt 7s linear infinite;
+  }
+  
+  @keyframes rotateIt {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  

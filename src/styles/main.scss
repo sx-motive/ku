@@ -1,25 +1,27 @@
-// utils
-@import "./utils/variables.scss";
-// components
-@import "./components/preloader.scss";
+@charset "UTF-8";
 
-@import "./utils/fonts.scss";
-@import "./utils/locomotive.scss";
+@import "vendors/include-media.scss";
+@import "vendors/locomotive.scss";
 
-@import "./utils/media.scss";
+@import "base/variables.scss";
+@import "base/fonts.scss";
+@import "base/base.scss";
 
-// base
-@import "base.scss";
+@import "components/_cursor.scss";
+@import "components/_button.scss";
+@import "components/_footer.scss";
+@import "components/_header.scss";
+@import "components/_menu.scss";
+@import "components/_preloader.scss";
+@import "components/_sections.scss";
+@import "components/_paragraph.scss";
+@import "components/_caption.scss";
 
-// components
-@import "./components/header.scss";
-@import "./components/footer.scss";
-@import "./components/menu.scss";
-
-// utils
-@import "./utils/cursor.scss";
-@import "./utils/text.scss";
-@import "./utils/other.scss";
-
-// comp
-@import "./components/sections.scss";
+.ui {
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  width: 60rem;
+  border: 1px solid #000;
+}

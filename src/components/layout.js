@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-// components import
+import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 import Menu from "./menu";
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       scroll = new locomotiveModule.default({
         el: document.querySelector("[data-scroll-container]"),
         smooth: true,
-        lerp: 0.08,
+        lerp: 0.05,
         smoothMobile: true,
         resetNativeScroll: true,
       });
@@ -21,11 +21,16 @@ export default function Layout({ children }) {
   });
 
   return (
-    <main data-scroll-container>
-      <Header />
-      {children}
-      <Footer />
-      <Menu />
-    </main>
+    <>
+      <Head>
+        <title>Digital Designer | Frontend Developer | Denis Kunitsyn</title>
+      </Head>
+      <main data-scroll-container>
+        <Header />
+        {children}
+        <Footer />
+        <Menu />
+      </main>
+    </>
   );
 }

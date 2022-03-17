@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Text from "../text";
 import { services } from "../../utils/data";
+import Paragraph from "../interface/paragraph";
 
 export default function Services() {
   return (
@@ -38,7 +38,7 @@ export default function Services() {
               </div>*/}
               <div className="services-item-meta">
                 <span className="services-item-title">
-                  <Text text={item.title} />
+                  <Paragraph>{item.title}</Paragraph>
                 </span>
               </div>
               <div className="services-item-right-wrapper">
@@ -56,12 +56,12 @@ export default function Services() {
                 >
                   {item.list.map((itemList, index) => (
                     <li className="services-item-list-item" key={index}>
-                      <Text text={itemList} />
+                      <Paragraph>{itemList}</Paragraph>
                     </li>
                   ))}
                 </motion.ul>
                 <div className="services-item-text">
-                  <Text text={item.text} />
+                  <Paragraph>{item.text}</Paragraph>
                 </div>
                 <motion.div
                   className="services-item-read"

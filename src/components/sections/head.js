@@ -1,5 +1,5 @@
 import React from "react";
-import Text from "../text";
+import Caption from "../interface/caption";
 
 export default function Head(props) {
   return (
@@ -18,7 +18,7 @@ export default function Head(props) {
         }`}
       >
         <h2 className="section-head-title">
-          <Text text={props.title} />
+          <Caption>{props.title}</Caption>
         </h2>
       </div>
     </section>

@@ -1,9 +1,6 @@
 import React from "react";
-import { portfolio } from "../../utils/data";
-import Link from "next/link";
-import Text from "../text";
 import Img from "../sections/img";
-import { motion } from "framer-motion";
+import { portfolio } from "../../utils/data";
 
 export default function Portfolio() {
   return (

@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Script from "next/script";
-import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
-
-import Layout from "../components/layout";
 import Preloader from "../components/preloader";
+import Layout from "../components/layout";
+import Script from "next/script";
 
 import "../styles/main.scss";
 
@@ -19,9 +17,6 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <AnimatePresence>
-      <Head>
-        <title>Digital Designer | Frontend Developer | Denis Kunitsyn</title>
-      </Head>
       {loading ? (
         <motion.div key="preloader">
           <Preloader setLoading={setLoading} />
