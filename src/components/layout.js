@@ -17,7 +17,10 @@ export default function Layout({ children }) {
       });
     });
 
-    return () => scroll.destroy();
+    return () => {
+      document.getElementsByClassName("ht-cursor")[0].remove();
+      scroll.destroy();
+    };
   });
 
   return (

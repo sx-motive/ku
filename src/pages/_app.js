@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Preloader from "../components/preloader";
+import Loader from "../components/loader";
 import Layout from "../components/layout";
 import Script from "next/script";
 
@@ -18,8 +18,8 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence>
       {loading ? (
-        <motion.div key="preloader">
-          <Preloader setLoading={setLoading} />
+        <motion.div key="loader">
+          <Loader setLoading={setLoading} />
         </motion.div>
       ) : (
         <motion.div key="content">

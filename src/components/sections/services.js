@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { services } from "../../utils/data";
 import Paragraph from "../interface/paragraph";
+import Caption from "../interface/caption";
 
 export default function Services() {
   return (
@@ -38,7 +39,7 @@ export default function Services() {
               </div>*/}
               <div className="services-item-meta">
                 <span className="services-item-title">
-                  <Paragraph>{item.title}</Paragraph>
+                  <Caption tag="h3">{item.title}</Caption>
                 </span>
               </div>
               <div className="services-item-right-wrapper">

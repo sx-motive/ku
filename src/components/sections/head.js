@@ -18,7 +18,7 @@ export default function Head(props) {
         }`}
       >
         <h2 className="section-head-title">
-          <Caption>{props.title}</Caption>
+          <Caption tag="h2">{props.title}</Caption>
         </h2>
       </div>
     </section>

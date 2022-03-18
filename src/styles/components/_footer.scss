@@ -1,32 +1,81 @@
 footer {
   position: relative;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 4rem 3.5rem 4rem;
-  font-size: 0.85rem;
   background-color: $black;
   color: $white;
-  margin-top: -1px;
-}
-
-.footer-nav ul {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-@include media("<tablet") {
-  .footer {
-    justify-content: center;
-    padding: 0 3rem 3rem 3rem;
-    font-size: 0.8rem;
+  .footer-bottom {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 4rem 3rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @include media("<tablet") {
+      justify-content: center;
+    }
     .footer-nav ul {
-      gap: 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  .footer-top {
+    position: relative;
+    display: block;
+    padding: 10rem 0;
+    .footer-marquee {
+      padding: 1rem 0;
+      font-size: 15rem;
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      opacity: 0.1;
+      overflow: hidden;
+    }
+    .footer-touch {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $black;
+      z-index: 3;
+      font-size: 1.3rem;
+      &:hover {
+        color: $white;
+      }
+      &:hover.footer-touch::after {
+        background-color: $dark;
+        color: $white;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $light;
+        z-index: -1;
+        transition: background 0.14s ease-in-out;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { socials } from "../utils/data";
-import Marquee from "../components/sections/marquee";
+import Marquee from "react-fast-marquee";
 
 export default function Footer() {
   return (
@@ -9,11 +9,13 @@ export default function Footer() {
       <footer className="footer" data-scroll-section>
         <div className="footer-top">
           <Link href="https://t.me/sxmotive">
-            <a data-magnetic className="prefooter-touch">
+            <a data-magnetic className="footer-touch">
               Send message <span> ↗︎</span>
             </a>
           </Link>
-          <Marquee text="Message in Telegram * Message in Telegram * " />
+          <Marquee gradient={false} className={"footer-marquee"} speed={120}>
+            Send Message In Telegram * Send Message In Telegram *
+          </Marquee>
         </div>
         <div className="footer-bottom">
           <div className="footer-nav">
@@ -30,7 +32,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-credit">
-            <span>Design & promotion by motive ©2022</span>
+            <span>Created with ❤ by Denis Kunitsyn ©2022</span>
           </div>
         </div>
       </footer>

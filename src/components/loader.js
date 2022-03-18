@@ -31,23 +31,23 @@ const item = {
   },
 };
 
-export default function Preloader({ setLoading }) {
+export default function Loader({ setLoading }) {
   return (
-    <div className="preloader">
+    <div className="loader">
       <motion.div
-        className="preloader-inner"
+        className="loader-inner"
         onAnimationComplete={() => setLoading(false)}
         initial="hidden"
         animate="show"
         exit="exit"
       >
         <motion.div className="container -center" variants={container}>
-          <div className="preloader-line-wrap">
+          <div className="loader-line-wrap">
             <motion.div className="line" variants={item}>
               Denis
             </motion.div>
           </div>
-          <div className="preloader-line-wrap">
+          <div className="loader-line-wrap">
             <motion.div className="line" variants={item}>
               Kunitsyn
             </motion.div>

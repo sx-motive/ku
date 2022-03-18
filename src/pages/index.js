@@ -20,7 +20,7 @@ export default function Home() {
           </video>
         </div>
       </section>
-      <Head cont="left" title="Great brands need great decisions" />
+      <Head cont="left" title="Great brand needs a great decision" />
       <Services />
 
       <section className="image-section" data-scroll-section>

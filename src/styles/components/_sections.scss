@@ -78,52 +78,6 @@ section.section-head {
   }
 }
 
-section.prefooter {
-  position: relative;
-  width: 100%;
-  padding: 10rem 0 0 0;
-  background-color: $black;
-  color: $white;
-  z-index: -1;
-
-  .prefooter-touch {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $black;
-    z-index: 3;
-    &:hover + .marquee .marquee-text {
-      transition: color 0.4s ease-out;
-      color: $white;
-      opacity: 0.1;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      width: 20rem;
-      height: 20rem;
-      top: 50%;
-      left: 50%;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 10rem;
-      height: 10rem;
-      top: 50%;
-      left: 50%;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      background-color: $white;
-      z-index: -1;
-    }
-  }
-}
-
 section.portfolio {
   position: relative;
   width: 100%;
