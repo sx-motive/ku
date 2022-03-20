@@ -1,20 +1,37 @@
+import Link from "next/link";
+
 import About from "../components/sections/about";
 import Img from "../components/sections/img";
 import Portfolio from "../components/sections/portfolio";
 import Head from "../components/sections/head";
 import Services from "../components/sections/services";
 import Caption from "../components/interface/caption";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
     <>
       <section className="hero" data-scroll-section>
-        <div className="container -full">
-          <div className="hero-title">
-            <Caption tag="h1">Digital Designer & Frontend Developer</Caption>
-          </div>
+        <div className="hero-title">
+          <Marquee gradient={false} speed={120}>
+            <Caption tag="h1"> Frontend developer & Digital Designer</Caption>
+          </Marquee>
         </div>
-        <div className="hero-image">
+        <div className="hero-subtitle">
+          <Marquee direction="right" gradient={false} speed={60}>
+            <Caption tag="h3">
+              I believe in creating beautiful and complete brand experiences by
+              helping them connect with their intention and know-how to
+              communicate their purpose.
+            </Caption>
+          </Marquee>
+        </div>
+        <div className="hero-explore">
+          <Link href="/">
+            <a>Explore about</a>
+          </Link>
+        </div>
+        <div className="hero-video">
           <video autoPlay muted loop>
             <source src="/videos/05.mp4" />
           </video>
@@ -29,7 +46,7 @@ export default function Home() {
           data-scroll
           data-scroll-speed="-5"
         >
-          <Img src="/images/03.webp" fallback="/images/02.webp" alt="banner" />
+          <Img src="/images/04.webp" fallback="/images/04.webp" alt="banner" />
         </div>
       </section>
       <Head

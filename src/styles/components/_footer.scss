@@ -31,10 +31,12 @@ footer {
     padding: 10rem 0;
     .footer-marquee {
       padding: 1rem 0;
-      font-size: 15rem;
+      font-size: 14rem;
       color: transparent;
+      text-transform: uppercase;
       -webkit-text-stroke: 1px $white;
-      opacity: 0.1;
+      opacity: 0.3;
+      font-family: $title-ff;
       overflow: hidden;
     }
     .footer-touch {
@@ -44,7 +46,7 @@ footer {
       transform: translate(-50%, -50%);
       color: $black;
       z-index: 3;
-      font-size: 1.3rem;
+      font-size: 1rem;
       &:hover {
         color: $white;
       }

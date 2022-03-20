@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: baseline;
   width: 100%;
-  padding: 4rem 4rem 0 4rem;
+  padding: 3.8rem 4rem 0 4rem;
   z-index: 2;
   color: $white;
   mix-blend-mode: difference;
@@ -17,15 +17,26 @@
   }
 }
 
-.header-nav ul {
+.header-nav {
   position: relative;
   line-height: 0;
   display: flex;
   gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   li {
     position: relative;
     display: block;
     width: 100%;
+    text-align: center;
   }
   @include media("<=tablet") {
     display: none;

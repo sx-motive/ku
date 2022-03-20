@@ -18,31 +18,62 @@ section.hero {
   height: 100vh;
   background-color: $black;
   overflow: hidden;
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
+  padding-top: 35vh;
   .hero-title {
     position: relative;
     font-family: $title-ff;
-    font-size: 7rem;
-    letter-spacing: -0.2rem;
+    font-size: 13rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     text-align: center;
-    margin: 0 auto;
-    line-height: 1.2;
     width: 100%;
-    max-width: 70%;
     color: $white;
     mix-blend-mode: difference;
   }
-  .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .hero-subtitle {
+    position: relative;
+    margin-top: 2rem;
+    font-family: $title-ff;
+    font-size: 2.3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
     width: 100%;
-    z-index: -1;
+    color: $white;
+    mix-blend-mode: difference;
+  }
+
+  .hero-explore {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    letter-spacing: -0.01rem;
+    color: $white;
+    mix-blend-mode: difference;
+    text-decoration: underline;
+    a {
+      position: relative;
+    }
+  }
+  .hero-video {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    height: 70vh;
+    width: calc(100% - 8rem);
+    left: 4rem;
+    z-index: 1;
+    overflow: hidden;
     filter: grayscale(100%);
+
+    z-index: -1;
+    video {
+      object-fit: cover;
+    }
   }
 }
 
@@ -100,7 +131,7 @@ section.services {
   position: relative;
   padding-bottom: 10rem;
   hr {
-    opacity: 0.37;
+    opacity: 0.17;
   }
   .services-wrapper {
     position: relative;
@@ -143,7 +174,8 @@ section.services {
 
       .services-item-right-wrapper {
         position: relative;
-        width: 45%;
+        width: 100%;
+        max-width: 50rem;
         @include media("<=phone") {
           width: 100%;
           margin-top: 4rem;
@@ -193,6 +225,7 @@ section.image-section {
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
+  filter: grayscale(100%);
   @include media("<=phone") {
     height: 70vh;
   }

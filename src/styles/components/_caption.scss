@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   display: block;
+  text-transform: uppercase;
   .caption-line-wrap {
     position: relative;
     display: block;
@@ -15,12 +16,11 @@
     }
   }
   &.h1 {
-    font-size: 8rem;
-    letter-spacing: -0.3rem;
+    font-size: 14rem;
+    letter-spacing: -0.1rem;
   }
   &.h2 {
-    font-size: 6rem;
-    letter-spacing: -0.2rem;
+    font-size: 5rem;
   }
   &.h3 {
     font-size: 3rem;

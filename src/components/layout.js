@@ -18,7 +18,6 @@ export default function Layout({ children }) {
     });
 
     return () => {
-      document.getElementsByClassName("ht-cursor")[0].remove();
       scroll.destroy();
     };
   });

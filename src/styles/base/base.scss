@@ -24,7 +24,7 @@ html {
     font-size: 14px;
   }
   @include media(">laptop", "<=desktop") {
-    font-size: 16px;
+    font-size: 14px;
   }
   @include media(">desktop", "<=quad") {
     font-size: 28px;
@@ -46,16 +46,13 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  color: $black;
-  background-color: $white;
+  color: $white;
+  background-color: $black;
 }
 
-main {
-  background-color: $white;
-}
-
+main,
 section {
-  background-color: $white;
+  background-color: $black;
 }
 
 a {
@@ -118,7 +115,7 @@ p {
     }
   }
   &.-right {
-    max-width: calc(60% - 10rem);
+    max-width: 50rem;
     margin-left: calc(50% - 10rem);
     @include media("<=tablet") {
       max-width: calc(70% - 8rem);
