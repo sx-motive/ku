@@ -8,6 +8,8 @@
   z-index: 2;
   color: $white;
   mix-blend-mode: difference;
+  text-transform: uppercase;
+  line-height: 0;
 
   @include media("<=tablet") {
     padding: 2.5rem 4rem 0 4rem;
@@ -17,26 +19,19 @@
   }
 }
 
-.header-nav {
+.header-logo {
   position: relative;
-  line-height: 0;
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   text-transform: uppercase;
+}
+.header-nav {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
   ul {
     position: relative;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-  }
-  li {
-    position: relative;
-    display: block;
-    width: 100%;
-    text-align: center;
+    gap: 3rem;
   }
   @include media("<=tablet") {
     display: none;

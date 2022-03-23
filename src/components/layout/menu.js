@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { navPrimary } from "../utils/data";
+import { navPrimary } from "../../utils/data";
 
 export default function Menu() {
   const [isOpen, setOpen] = useState(false);

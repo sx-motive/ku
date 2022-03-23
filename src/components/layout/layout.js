@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Head from "next/head";
+import { motion } from "framer-motion";
 import Header from "./header";
 import Footer from "./footer";
 import Menu from "./menu";
@@ -24,15 +24,10 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <Head>
-        <title>Digital Designer | Frontend Developer | Denis Kunitsyn</title>
-      </Head>
-      <main data-scroll-container>
-        <Header />
-        {children}
-        <Footer />
-        <Menu />
-      </main>
+      <Header />
+      {children}
+      <Footer />
+      <Menu />
     </>
   );
 }

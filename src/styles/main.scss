@@ -7,21 +7,14 @@
 @import "base/fonts.scss";
 @import "base/base.scss";
 
-@import "components/_cursor.scss";
-@import "components/_button.scss";
-@import "components/_footer.scss";
-@import "components/_header.scss";
-@import "components/_menu.scss";
-@import "components/loader.scss";
-@import "components/_sections.scss";
-@import "components/paragraph.scss";
-@import "components/_caption.scss";
+@import "components/interface/caption.scss";
+@import "components/interface/paragraph.scss";
+@import "components/interface/cursor.scss";
+@import "components/interface/button.scss";
 
-.ui {
-  margin: 0 auto;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
-  padding: 2rem;
-  width: 60rem;
-  border: 1px solid #000;
-}
+@import "components/layout/loader.scss";
+@import "components/layout/header.scss";
+@import "components/layout/footer.scss";
+@import "components/layout/menu.scss";
+
+@import "components/sections/sections.scss";

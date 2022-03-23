@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Loader from "../components/loader";
-import Layout from "../components/layout";
 import Script from "next/script";
+import Head from "next/head";
+
+import Loader from "../components/layout/loader";
+import Layout from "../components/layout/layout";
 
 import "../styles/main.scss";
 
@@ -17,18 +19,21 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <AnimatePresence>
+      <Head>
+        <title>Denis Kunitsyn - Digital Designer & Frontend Developer</title>
+      </Head>
       {loading ? (
         <motion.div key="loader">
           <Loader setLoading={setLoading} />
         </motion.div>
       ) : (
-        <motion.div key="content">
+        <motion.main key="content" data-scroll-container>
           <Layout>
             <Component {...pageProps} key={router.route} />
           </Layout>
-          <Script src="cursor.js" />
-        </motion.div>
+        </motion.main>
       )}
+      <Script src="cursor.js" />
     </AnimatePresence>
   );
 }

@@ -61,14 +61,12 @@ section.hero {
   }
   .hero-video {
     position: absolute;
-    top: 15vh;
+    top: 0;
     left: 0;
-    height: 70vh;
-    width: calc(100% - 8rem);
-    left: 4rem;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     overflow: hidden;
-    filter: grayscale(100%);
 
     z-index: -1;
     video {
@@ -84,6 +82,9 @@ section.about {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  .paragraph {
+    margin-bottom: 2rem;
+  }
   @include media("<=tablet") {
     text-align: left;
   }
@@ -118,11 +119,17 @@ section.portfolio {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 6%;
+    flex-wrap: wrap;
     .portfolio-item {
       position: relative;
-      width: 100%;
-      height: 120vh;
+      width: 47%;
+      height: 60vh;
       margin-bottom: 5rem;
+      @include media("<=tablet") {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
@@ -225,7 +232,6 @@ section.image-section {
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
-  filter: grayscale(100%);
   @include media("<=phone") {
     height: 70vh;
   }

@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { navPrimary } from "../utils/data";
+import { navPrimary } from "../../utils/data";
 
 export default function Header() {
   return (
     <>
       <header className="header" data-scroll-section>
+        <div className="header-logo">Denis Kunitsyn</div>
         <div className="header-nav">
           <ul>
             {navPrimary.map((item, index) => (

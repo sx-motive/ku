@@ -54,36 +54,87 @@ export const services = [
 
 export const portfolio = [
   {
-    slug: "romanova",
-    title: "Romanova Cafe",
+    date: "2021",
+    slug: "olga-romanova-confectionery",
+    title: "Olga Romanova's Confectionery",
+    isarchive: false,
+    link: "https://romanova.cafe",
+    images: [
+      "/images/portfolio/romanova/romanova01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
+    ],
     video: "/videos/01.mp4",
-    image: "/images/portfolio/romanova/romanova01.webp",
+    description:
+      "Olga Romanova's Confectionery Boutique offers exquisite handmade confections. The high skill of the confectioner, original author's recipes and natural ingredients have combined into small masterpieces that bring aesthetic and gustatory pleasure.",
+  },
+  {
+    date: "2021",
+    slug: "taxi-company-onestandard",
+    title: "The taxi company Onestandard",
+    isarchive: false,
+    link: "https://onestandart.ru",
     images: [
       "/images/portfolio/romanova/romanova01.webp",
       "/images/portfolio/romanova/romanova01.webp",
     ],
-    description: "Концепт-дизайн для ювелирного интернет-магазина",
+    video: "/videos/01.mp4",
+    description:
+      "Autopark Onestandart invites cab drivers to work, both on personal cars, and company cars. We guarantee favorable rental conditions and high earnings. Leave a request and the manager will call you back.",
   },
   {
-    slug: "beauty",
-    title: "Beauty",
-    video: "/videos/02.mp4",
-    image: "/images/portfolio/beauty/beauty01.webp",
+    date: "2021",
+    slug: "taxi-company-onestandard",
+    title: "The taxi company Onestandard",
+    isarchive: true,
+    link: "https://onestandart.ru",
     images: [
-      "/images/portfolio/beauty/beauty01.webp",
-      "/images/portfolio/beauty/beauty01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
     ],
-    description: "Концепт-дизайн для ювелирного интернет-магазина",
+    video: "/videos/01.mp4",
+    description:
+      "Autopark Onestandart invites cab drivers to work, both on personal cars, and company cars. We guarantee favorable rental conditions and high earnings. Leave a request and the manager will call you back.",
   },
   {
-    slug: "standart",
-    title: "Standart",
-    video: "/videos/03.mp4",
-    image: "/images/portfolio/standart/standart01.webp",
+    date: "2021",
+    slug: "taxi-company-onestandard",
+    title: "The taxi company Onestandard",
+    isarchive: true,
+    link: "https://onestandart.ru",
     images: [
-      "/images/portfolio/standart/standart01.webp",
-      "/images/portfolio/standart/standart01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
     ],
-    description: "Концепт-дизайн для ювелирного интернет-магазина",
+    video: "/videos/01.mp4",
+    description:
+      "Autopark Onestandart invites cab drivers to work, both on personal cars, and company cars. We guarantee favorable rental conditions and high earnings. Leave a request and the manager will call you back.",
+  },
+  {
+    date: "2021",
+    slug: "taxi-company-onestandard",
+    title: "The taxi company Onestandard",
+    isarchive: true,
+    link: "https://onestandart.ru",
+    images: [
+      "/images/portfolio/romanova/romanova01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
+    ],
+    video: "/videos/01.mp4",
+    description:
+      "Autopark Onestandart invites cab drivers to work, both on personal cars, and company cars. We guarantee favorable rental conditions and high earnings. Leave a request and the manager will call you back.",
+  },
+  {
+    date: "2021",
+    slug: "taxi-company-onestandard",
+    title: "The taxi company Onestandard",
+    isarchive: true,
+    link: "https://onestandart.ru",
+    images: [
+      "/images/portfolio/romanova/romanova01.webp",
+      "/images/portfolio/romanova/romanova01.webp",
+    ],
+    video: "/videos/01.mp4",
+    description:
+      "Autopark Onestandart invites cab drivers to work, both on personal cars, and company cars. We guarantee favorable rental conditions and high earnings. Leave a request and the manager will call you back.",
   },
 ];
