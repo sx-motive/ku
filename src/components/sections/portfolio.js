@@ -30,8 +30,19 @@ export default function Portfolio() {
             )
           )}
         </div>
-        <div className="container -right">
+        <div className="container -right archive">
           <Caption tag="h3">Commercial poducts</Caption>
+          <motion.hr
+            initial={{ width: 0 }}
+            whileInView={{
+              width: "100%",
+              transition: {
+                ease: [0.6, 0.01, -0.05, 0.95],
+                duration: 2,
+              },
+            }}
+            viewport={{ once: false }}
+          />
           <div className="portfolio-archive-wrapper">
             {portfolio.map((item, index) =>
               item.isarchive ? (
@@ -40,7 +51,7 @@ export default function Portfolio() {
                     <Paragraph>{item.title}</Paragraph>
                   </div>
                   <div className="portfolio-archive-item-desc">
-                    {item.description}
+                    <Paragraph>{item.description}</Paragraph>
                   </div>
                   <div className="portfolio-archive-item-date">{item.date}</div>
                   <motion.hr

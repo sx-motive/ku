@@ -132,6 +132,31 @@ section.portfolio {
       }
     }
   }
+  .archive {
+    margin-top: 15rem;
+  }
+  .portfolio-archive-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .portfolio-archive-item {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0;
+      .portfolio-archive-item-desc {
+        max-width: 50%;
+      }
+      hr {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0.2;
+      }
+    }
+  }
 }
 
 section.services {
