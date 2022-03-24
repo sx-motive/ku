@@ -3,6 +3,7 @@
   width: 100%;
   display: block;
   text-transform: uppercase;
+  font-family: $title-ff;
   .caption-line-wrap {
     position: relative;
     display: block;
@@ -17,13 +18,11 @@
   }
   &.h1 {
     font-size: 14rem;
-    letter-spacing: -0.1rem;
   }
   &.h2 {
     font-size: 5rem;
   }
   &.h3 {
     font-size: 3rem;
-    letter-spacing: -0.1rem;
   }
 }

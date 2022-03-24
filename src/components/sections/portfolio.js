@@ -31,8 +31,9 @@ export default function Portfolio() {
           )}
         </div>
         <div className="container -right archive">
-          <Caption tag="h3">Commercial poducts</Caption>
+          <Caption tag="h3">Commercial only poducts</Caption>
           <motion.hr
+            className="portfolio-archive-hr"
             initial={{ width: 0 }}
             whileInView={{
               width: "100%",

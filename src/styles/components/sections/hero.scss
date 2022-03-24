@@ -1,0 +1,63 @@
+section.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  overflow: hidden;
+  padding-top: 35vh;
+  .hero-title {
+    position: relative;
+    font-family: $title-ff;
+    font-size: 13rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 100%;
+    color: $white;
+    mix-blend-mode: difference;
+  }
+  .hero-subtitle {
+    position: relative;
+    margin-top: 2rem;
+    font-family: $title-ff;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 100%;
+    color: $white;
+    mix-blend-mode: difference;
+  }
+
+  .hero-explore {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    letter-spacing: -0.01rem;
+    color: $white;
+    mix-blend-mode: difference;
+    text-decoration: underline;
+    a {
+      position: relative;
+    }
+  }
+  .hero-video {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    height: 80%;
+    width: 40%;
+    z-index: -1;
+    overflow: hidden;
+    transform: rotate(20deg);
+    video {
+      position: relative;
+      width: 100%;
+      filter: grayscale(100%);
+    }
+  }
+}

@@ -1,9 +1,31 @@
 import React from "react";
+import Img from "./img";
 import Paragraph from "../interface/paragraph";
 
 export default function About() {
   return (
     <section className="about" data-scroll-section>
+      <div className="about-img -one" data-scroll data-scroll-speed="2">
+        <Img
+          src="/images/banner-02.webp"
+          fallback="/images/banner-02.webp"
+          alt="banner"
+        />
+      </div>
+      <div className="about-img -two" data-scroll data-scroll-speed="-3">
+        <Img
+          ssrc="/images/banner-02.webp"
+          fallback="/images/banner-02.webp"
+          alt="banner"
+        />
+      </div>
+      <div className="about-img -three" data-scroll data-scroll-speed="2">
+        <Img
+          src="/images/banner-02.webp"
+          fallback="/images/banner-02.webp"
+          alt="banner"
+        />
+      </div>
       <div className="container -right">
         <div className="about-desc">
           <Paragraph>

@@ -1,8 +1,9 @@
 footer {
   position: relative;
   width: 100%;
-  background-color: $black;
-  color: $white;
+  background-color: $white;
+  color: $black;
+  z-index: -1;
   .footer-bottom {
     position: relative;
     display: block;
@@ -34,26 +35,19 @@ footer {
       font-size: 14rem;
       color: transparent;
       text-transform: uppercase;
-      -webkit-text-stroke: 1px $white;
+      -webkit-text-stroke: 1px $black;
       opacity: 0.3;
       font-family: $title-ff;
       overflow: hidden;
+      z-index: -1;
     }
     .footer-touch {
       position: absolute;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: $black;
-      z-index: 3;
+      z-index: 200;
       font-size: 1rem;
-      &:hover {
-        color: $white;
-      }
-      &:hover.footer-touch::after {
-        background-color: $dark;
-        color: $white;
-      }
       &::before {
         content: "";
         position: absolute;
@@ -61,9 +55,8 @@ footer {
         height: 30rem;
         top: 50%;
         left: 50%;
-        border-radius: 50%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: 200;
       }
       &::after {
         content: "";
@@ -76,7 +69,7 @@ footer {
         transform: translate(-50%, -50%);
         background-color: $light;
         z-index: -1;
-        transition: background 0.14s ease-in-out;
+        transition: all 0.14s ease-in-out;
       }
     }
   }

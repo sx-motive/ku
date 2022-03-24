@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { services } from "../../utils/data";
 import Paragraph from "../interface/paragraph";
 import Caption from "../interface/caption";
+import Marquee from "react-fast-marquee";
 
 export default function Services() {
   return (

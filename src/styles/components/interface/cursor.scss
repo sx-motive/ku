@@ -121,6 +121,11 @@
   background-color: $white;
 }
 
+.ht-cursor.-hero:before {
+  transform: scale(3.5);
+  background-color: $white;
+}
+
 .ht-cursor.-hidden:before {
   transform: scale(0);
 }

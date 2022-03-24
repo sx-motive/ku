@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
       <footer className="footer" data-scroll-section>
-        <div className="footer-top">
+        <div className="footer-top" data-scroll data-scroll-speed="-5">
           <Link href="https://t.me/sxmotive">
             <a data-magnetic className="footer-touch">
               Send message <span> ↗︎</span>
