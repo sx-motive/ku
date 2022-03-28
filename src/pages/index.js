@@ -31,7 +31,7 @@ export default function Home() {
             <a>Explore about</a>
           </Link>
         </div>
-        <div className="hero-video" data-scroll data-scroll-speed="-2">
+        <div className="hero-video">
           <video autoPlay muted loop>
             <source src="/videos/05.mp4" />
           </video>

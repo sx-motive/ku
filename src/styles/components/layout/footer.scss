@@ -1,8 +1,8 @@
 footer {
   position: relative;
   width: 100%;
-  background-color: $white;
-  color: $black;
+  background-color: rgb(5, 5, 5);
+  color: $white;
   z-index: -1;
   .footer-bottom {
     position: relative;
@@ -35,7 +35,7 @@ footer {
       font-size: 14rem;
       color: transparent;
       text-transform: uppercase;
-      -webkit-text-stroke: 1px $black;
+      -webkit-text-stroke: 1px $white;
       opacity: 0.3;
       font-family: $title-ff;
       overflow: hidden;
@@ -67,7 +67,7 @@ footer {
         left: 50%;
         border-radius: 50%;
         transform: translate(-50%, -50%);
-        background-color: $light;
+        background-color: $black;
         z-index: -1;
         transition: all 0.14s ease-in-out;
       }

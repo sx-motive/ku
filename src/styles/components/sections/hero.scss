@@ -47,15 +47,15 @@ section.hero {
   }
   .hero-video {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 45%;
     height: 80%;
     width: 40%;
     z-index: -1;
     overflow: hidden;
-    transform: rotate(20deg);
+    transform: rotate(20deg) !important;
     video {
-      position: relative;
+      position: absolute;
       width: 100%;
       filter: grayscale(100%);
     }
