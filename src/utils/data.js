@@ -73,11 +73,7 @@ export const portfolio = [
     title: "The taxi company Onestandard",
     isarchive: false,
     link: "https://onestandart.ru",
-    images: [
-      "/images/portfolio/romanova/romanova01.webp",
-      "/images/portfolio/romanova/romanova01.webp",
-    ],
-    video: "/videos/01.mp4",
+    images: ["/images/08.webp", "/images/07.webp"],
     description:
       "Autopark Onestandart invites cab drivers to work, both on personal cars, and company cars. We guarantee favorable rental conditions and high earnings. Leave a request and the manager will call you back.",
   },

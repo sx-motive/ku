@@ -11,11 +11,8 @@
   text-transform: uppercase;
   line-height: 0;
 
-  @include media("<=tablet") {
-    padding: 2.5rem 4rem 0 4rem;
-  }
   @include media("<=phone") {
-    padding: 1.1rem 1.1rem 0 1.5rem;
+    padding: 3rem 4rem 0 2rem;
   }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Paragraph from "../interface/paragraph";
 import Caption from "../interface/caption";
+import Img from "./img";
 import { motion } from "framer-motion";
 import { portfolio } from "../../utils/data";
 
@@ -18,14 +19,22 @@ export default function Portfolio() {
                   <Paragraph>{item.date}</Paragraph>
                   <Paragraph>{item.title}</Paragraph>
                 </div>
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  style={{ width: "100%", height: "100%" }}
-                >
-                  <source src={item.video} />
-                </video>
+                {item.video ? (
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    style={{ width: "100%", height: "100%" }}
+                  >
+                    <source src={item.video} />
+                  </video>
+                ) : (
+                  <Img
+                    src={item.images[0]}
+                    fallback={item.images[0]}
+                    alt={item.title}
+                  />
+                )}
               </div>
             )
           )}

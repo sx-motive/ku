@@ -14,6 +14,9 @@ section.about {
   .about-img {
     position: absolute;
     overflow: hidden;
+    @include media("<=tablet") {
+      display: none;
+    }
     picture {
       position: absolute;
       width: 100%;
@@ -82,6 +85,11 @@ section.portfolio {
       width: 47%;
       height: 60vh;
       margin-bottom: 5rem;
+      img {
+        width: 100%;
+        position: relative;
+        height: 100%;
+      }
       @include media("<=tablet") {
         width: 100%;
         height: 100%;
