@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import Header from "./header";
 import Footer from "./footer";
 import Menu from "./menu";

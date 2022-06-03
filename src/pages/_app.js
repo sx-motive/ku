@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Script from "next/script";
 import Head from "next/head";
 
-import Loader from "../components/layout/loader";
-import Layout from "../components/layout/layout";
+import Loader from "../components/loader";
+import Layout from "../components/layout";
 
 import "../styles/main.scss";
 
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps, router }) {
           <Loader setLoading={setLoading} />
         </motion.div>
       ) : (
-        <motion.main key="content" data-scroll-container>
+        <motion.main key={router.route} data-scroll-container>
           <Layout>
             <Component {...pageProps} key={router.route} />
           </Layout>

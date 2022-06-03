@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-import { socials } from "../../utils/data";
+import { socials } from "../utils/data";
 
 export default function Footer() {
   return (
